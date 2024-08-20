@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fasolka</title>
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div class="main">
+		<!-- Header -->
+		<div class="header">
+			<div class="head_logo">
+				<img src="img/logo.png" class="head_logo_img" height="100%">
+			</div>
+			<div class="head_block1">
+				<h1 class="head_cont_h1">Онлайн заняття для дiтей</h1>
+				<a href="" class="head_cont_btn">
+					Пробние заняття
+				</a>
+			</div>
+			<div class="head_block2">
+				<img src="img/Fasolka.png" class="head_img">
+			</div>
+		</div>
+
+		<hr>
+
+		<!-- Courses -->
+		<section>
+			<div class="content_banner">
+				<h1>Які курси у нас є?</h1>
+			</div>
+			<div class="content_grid">
+				<div class="content_block content_block1">
+					<img src="img/11.png" alt="">
+				</div>
+				<div class="content_block content_block2">
+					<h2>«Підготовка до школи»</h2> 
+					<p>Навчаємо читати, рахувати та писати.</p>
+					<button class="content_block_btn">
+						Детальніше
+					</button>
+				</div>
+				<div class="content_block content_block3">
+					<h2>«Вчимося читати»</h2>
+					<p>Навчаємо читати з нуля: від літер до читання коротких текстів.</p>
+					<button class="content_block_btn">
+						Детальніше
+					</button>
+				</div>
+				<div class="content_block content_block4">
+					<img src="img/22.png" alt="">
+				</div>
+				<div class="content_block content_block5">
+					<img src="img/33.png" alt="">
+				</div>
+				<div class="content_block content_block6">
+					<h2>«Швидке читання»</h2>
+					<p>Формуємо навички усвідомленого читання (читання = розуміння).</p>
+					<button class="content_block_btn">
+						Детальніше
+					</button>
+				</div>	
+			</div>
+		</section>
+			
+		<hr>
+
+		<!-- FAQ -->
+		<section class="faq_section">
+			<div class="faq">
+				<div class="accordion">
+			    	<div class="image-box">
+			      		<img src="img/Fasolka.png" alt="">
+			    	</div>
+			    	<div class="accordion-text">
+			     		<div class="title">Найпоширеніші запитання</div>
+			    		<ul class="faq-text">
+			      			<li>
+			        			<div class="question-arrow">
+			          				<span class="question">What do you mean by HTML & CSS?</span>
+			          				<i class="bx bxs-chevron-down arrow"></i>
+			        			</div>
+			        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, doloribus.</p>
+			        			<span class="line"></span>
+			      			</li>
+			      			<li>
+			        			<div class="question-arrow">
+			          				<span class="question">What do you mean by JavaScript?</span>
+			         				<i class="bx bxs-chevron-down arrow"></i>
+			        			</div>
+			        			<p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive</p>
+			        			<span class="line"></span>
+			      			</li>
+			    			<li>
+						        <div class="question-arrow">
+						        	<span class="question">From where you learned HTML & CSS?</span>
+						        	<i class="bx bxs-chevron-down arrow"></i>
+						        </div>
+						        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, necessitatibus.</p>
+						        <span class="line"></span>
+						    </li>
+						    <li>
+						        <div class="question-arrow">
+						        	<span class="question">Which code editor do you use?</span>
+						        	<i class="bx bxs-chevron-down arrow"></i>
+						        </div>
+						        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, labore.</p>
+						        <span class="line"></span>
+						    </li>
+						    <li>
+						        <div class="question-arrow">
+						        	<span class="question">Software you use for video editing?</span>
+						        	<i class="bx bxs-chevron-down arrow"></i>
+						        </div>
+						        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repudiandae!</p>
+						        <span class="line"></span>
+						    </li>
+						</ul>
+		    		</div>
+		   		</div>
+			</div>
+
+			<script>
+		    	let li = document.querySelectorAll(".faq-text li");
+		    	for (var i = 0; i < li.length; i++) {
+		      		li[i].addEventListener("click", (e)=>{
+		        	let clickedLi;
+		        	if(e.target.classList.contains("question-arrow")){
+		          		clickedLi = e.target.parentElement;
+		        	}else{
+		          		clickedLi = e.target.parentElement.parentElement;
+		        	}
+		       			clickedLi.classList.toggle("showAnswer");
+		      		});
+		    	}
+			</script>
+		</section>
+
+		<hr>
+		<!-- Footer -->
+		<footer></footer>
+	</div>
+</body>
+</html>
